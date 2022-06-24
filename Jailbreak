@@ -44,11 +44,11 @@ OtherSection:NewButton("Chat Spoofer", "Lets you chat for other people (Risk of 
     loadstring(game:HttpGet("https://pastebin.com/raw/djBfk8Li"))()
 end)
 
-OtherSection:NewButton("AutoFarm", "Loads Jailbreak autofarm script", function()
+OtherSection:NewButton("Auto-Farm", "Loads Jailbreak auto-farm script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1"))()
 end)
 
-OtherSection:NewButton("AutoFarm", "Loads Jailbreak autofarm script", function()
+OtherSection:NewButton("Auto-Arrest", "Loads Jailbreak auto-arrest script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/getjpog/jailpoggers/main/AutoArrestInstantTP.lua"))()
 end)
 
