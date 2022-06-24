@@ -1,16 +1,19 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Agnar Hub", "DarkTheme")
 
+-- Credits
+local Credits = Window:NewTab("Credits")
+local CreditsSection = Credits:NewSection("Credits")
+
+CreditsSection:NewLabel("Script made by Luki#8505")
+CreditsSection:NewLabel("For updates join .gg/agnarhub or .gg/9m8uVdX9uW")
+
 -- Main
 local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Main")
 
 MainSection:NewButton("Fly [LeftAlt]", "Fly script made by Luki#8505", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/imlukii/flyingscript/main/Fly"))()
-end)
-
-MainSection:NewButton("Admin", "Loads Infinity Yield script", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
 -- Toggles
@@ -50,6 +53,10 @@ local OtherSection = Other:NewSection("Other")
 
 OtherSection:NewButton("Chat Spoofer", "Lets you chat for other people (Risk of getting banned by Mods) [NOT BUBBLE]", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/djBfk8Li"))()
+end)
+
+OtherSection:NewButton("Admin", "Loads Infinity Yield script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
 OtherSection:NewKeybind("Toggle GUI", "Toggles the GUI", Enum.KeyCode.V, function()
