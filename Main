@@ -1,0 +1,53 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Luki Hub", "DarkTheme")
+
+-- Main
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+MainSection:NewButton("Fly [LeftAlt]", "Fly script made by Luki#8505", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/imlukii/flyingscript/main/Fly"))()
+end)
+
+MainSection:NewButton("Admin", "Loads Infinity Yield script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+-- Toggles
+local Toggles = Window:NewTab("Toggles")
+local TogglesSection = Toggles:NewSection("Toggles")
+
+TogglesSection:NewToggle("Super-Human", "Gives Walkspeed & JumpPower when enabled", function(v)
+    if v then
+        game.Players.LocalPlayer.Character.Humanoid.Walkspeed = 120
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+    else
+        game.Players.LocalPlayer.Character.Humanoid.Walkspeed = 16
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
+end)
+
+--Player Settings
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+
+PlayerSection:NewSlider("Walkspeed", "Changes your Walkspeed", 500, 16, function(v)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+end)
+
+PlayerSection:NewSlider("Jump Boost", "Changes your JumpPower", 500, 50, function(v)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+end)
+
+PlayerSection:NewButton("Reset WS/JP", "Resets your Walkspeed & JumpPower", function()
+    game.Players.LocalPlayer.Character.Humanoid.Walkspeed = 16
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
+
+-- Other
+local Other = Window:NewTab("Other")
+local OtherSection = Other:NewSection("Other")
+
+OtherSection:NewButton("Chat Spoofer", "Lets you chat for other people (Risk of getting banned by Mods) [NOT BUBBLE]", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/djBfk8Li"))()
+end)
