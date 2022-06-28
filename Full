@@ -1,0 +1,1116 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Script made by";
+	Text = "Luki and Devils";
+	Duration = 2.5;
+})
+
+local Agnar = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local Profile = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Main = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Player = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Toggles = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local AutoFarm = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Settings = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Credits = Instance.new("TextLabel")
+local Pages = Instance.new("Frame")
+local Main_2 = Instance.new("ScrollingFrame")
+local QuickSell = Instance.new("TextButton")
+local Deepest = Instance.new("TextButton")
+local ReduceLag = Instance.new("TextButton")
+local UIGridLayout = Instance.new("UIGridLayout")
+local QuickBuy = Instance.new("TextButton")
+local Player_2 = Instance.new("ScrollingFrame")
+local UIGridLayout_2 = Instance.new("UIGridLayout")
+local Fly = Instance.new("TextButton")
+local Noclip = Instance.new("TextButton")
+local SuperHuman = Instance.new("TextButton")
+local Reset = Instance.new("TextButton")
+local ForceReset = Instance.new("TextButton")
+local Spin = Instance.new("TextButton")
+local Toggles_2 = Instance.new("ScrollingFrame")
+local UIGridLayout_3 = Instance.new("UIGridLayout")
+local WalkspeedSlider = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local FOVSlider = Instance.new("Frame")
+local FOVSliderDisplay = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local ResetButton = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local SliderFrame = Instance.new("Frame")
+local SliderButton = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local UICorner_12 = Instance.new("UICorner")
+local UIListLayout = Instance.new("UIListLayout")
+local UICorner_13 = Instance.new("UICorner")
+local JumpBoostSlider = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local FOVSlider_2 = Instance.new("Frame")
+local FOVSliderDisplay_2 = Instance.new("TextLabel")
+local UICorner_14 = Instance.new("UICorner")
+local ResetButton_2 = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local SliderFrame_2 = Instance.new("Frame")
+local SliderButton_2 = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local UICorner_17 = Instance.new("UICorner")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local UICorner_18 = Instance.new("UICorner")
+local SettingsFrame = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local FOVSlider_3 = Instance.new("Frame")
+local FOVSliderDisplay_3 = Instance.new("TextLabel")
+local UICorner_19 = Instance.new("UICorner")
+local SliderFrame_3 = Instance.new("Frame")
+local SliderButton_3 = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local UICorner_21 = Instance.new("UICorner")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local UICorner_22 = Instance.new("UICorner")
+local ResetButton_3 = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local AutoFarm_2 = Instance.new("ScrollingFrame")
+local UIGridLayout_4 = Instance.new("UIGridLayout")
+local UnlockIsland = Instance.new("TextButton")
+local HiddenTreasure = Instance.new("TextButton")
+local FrozenDepths = Instance.new("TextButton")
+local GloomyBasin = Instance.new("TextButton")
+local MoltenCore = Instance.new("TextButton")
+local TheUnderworld = Instance.new("TextButton")
+local CrystalCavern = Instance.new("TextButton")
+local ChestESP = Instance.new("TextButton")
+local Settings_2 = Instance.new("ScrollingFrame")
+local UIGridLayout_5 = Instance.new("UIGridLayout")
+local User = Instance.new("Frame")
+local PlayerImage = Instance.new("ImageLabel")
+local UICorner_24 = Instance.new("UICorner")
+local PlayerName = Instance.new("TextLabel")
+local Title = Instance.new("TextLabel")
+local NotesFrame = Instance.new("Frame")
+local First = Instance.new("TextLabel")
+local Second = Instance.new("TextLabel")
+
+--Properties:
+
+Agnar.Name = "Agnar"
+Agnar.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Agnar.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Agnar.ResetOnSpawn = false
+
+Frame.Parent = Agnar
+Frame.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Frame.Position = UDim2.new(0.204473734, 0, 0.0902652889, 0)
+Frame.Size = UDim2.new(0, 591, 0, 372)
+Frame.Draggable = true
+Frame.Active = true
+
+UICorner.Parent = Frame
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.Position = UDim2.new(0.00338409469, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 589, 0, 48)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Agnar HUB | Mining Simulator 2"
+TextLabel.TextColor3 = Color3.fromRGB(124, 0, 2)
+TextLabel.TextSize = 30.000
+
+UICorner_2.Parent = TextLabel
+
+Profile.Name = "Profile"
+Profile.Parent = Frame
+Profile.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Profile.Position = UDim2.new(0.0186125208, 0, 0.163978502, 0)
+Profile.Size = UDim2.new(0, 124, 0, 29)
+Profile.Font = Enum.Font.GothamBlack
+Profile.Text = "User"
+Profile.TextColor3 = Color3.fromRGB(124, 0, 2)
+Profile.TextSize = 22.000
+
+UICorner_3.Parent = Profile
+
+Main.Name = "Main"
+Main.Parent = Frame
+Main.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Main.Position = UDim2.new(0.0186125208, 0, 0.268817216, 0)
+Main.Size = UDim2.new(0, 124, 0, 28)
+Main.Font = Enum.Font.GothamBlack
+Main.Text = "Main"
+Main.TextColor3 = Color3.fromRGB(124, 0, 2)
+Main.TextSize = 22.000
+
+UICorner_4.Parent = Main
+
+Player.Name = "Player"
+Player.Parent = Frame
+Player.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Player.Position = UDim2.new(0.0186125208, 0, 0.370967746, 0)
+Player.Size = UDim2.new(0, 124, 0, 28)
+Player.Font = Enum.Font.GothamBlack
+Player.Text = "Player"
+Player.TextColor3 = Color3.fromRGB(124, 0, 2)
+Player.TextSize = 22.000
+
+UICorner_5.Parent = Player
+
+Toggles.Name = "Toggles"
+Toggles.Parent = Frame
+Toggles.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Toggles.Position = UDim2.new(0.0186125208, 0, 0.478494644, 0)
+Toggles.Size = UDim2.new(0, 124, 0, 28)
+Toggles.Font = Enum.Font.GothamBlack
+Toggles.Text = "Toggles"
+Toggles.TextColor3 = Color3.fromRGB(124, 0, 2)
+Toggles.TextSize = 22.000
+
+UICorner_6.Parent = Toggles
+
+AutoFarm.Name = "AutoFarm"
+AutoFarm.Parent = Frame
+AutoFarm.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+AutoFarm.Position = UDim2.new(0.0186125208, 0, 0.588709712, 0)
+AutoFarm.Size = UDim2.new(0, 124, 0, 28)
+AutoFarm.Font = Enum.Font.GothamBlack
+AutoFarm.Text = "AutoFarm"
+AutoFarm.TextColor3 = Color3.fromRGB(124, 0, 2)
+AutoFarm.TextSize = 22.000
+
+UICorner_7.Parent = AutoFarm
+
+Settings.Name = "Settings"
+Settings.Parent = Frame
+Settings.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Settings.Position = UDim2.new(0.0186125208, 0, 0.690860271, 0)
+Settings.Size = UDim2.new(0, 124, 0, 28)
+Settings.Font = Enum.Font.GothamBlack
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.fromRGB(124, 0, 2)
+Settings.TextSize = 22.000
+
+UICorner_8.Parent = Settings
+
+Credits.Name = "Credits"
+Credits.Parent = Frame
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0.00300765969, 0, 0.807305753, 0)
+Credits.Size = UDim2.new(0, 139, 0, 61)
+Credits.Font = Enum.Font.GothamBold
+Credits.Text = "Script made by: Luki#8505 and devils#9821"
+Credits.TextColor3 = Color3.fromRGB(124, 0, 2)
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+Pages.Name = "Pages"
+Pages.Parent = Frame
+Pages.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Pages.Position = UDim2.new(0.238578677, 0, 0.163978487, 0)
+Pages.Size = UDim2.new(0, 441, 0, 301)
+
+Main_2.Name = "Main"
+Main_2.Parent = Pages
+Main_2.Active = true
+Main_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main_2.BackgroundTransparency = 1.000
+Main_2.Position = UDim2.new(0.0204081628, 0, 0.0265780725, 0)
+Main_2.Size = UDim2.new(0, 432, 0, 293)
+Main_2.Visible = false
+
+QuickSell.Name = "QuickSell"
+QuickSell.Parent = Main_2
+QuickSell.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+QuickSell.Position = UDim2.new(0.0317460299, 0, 0.0315614641, 0)
+QuickSell.Size = UDim2.new(0, 185, 0, 36)
+QuickSell.Font = Enum.Font.GothamBlack
+QuickSell.Text = "Quick Sell"
+QuickSell.TextColor3 = Color3.fromRGB(124, 0, 2)
+QuickSell.TextSize = 20.000
+QuickSell.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/imlukii/AgnarMS2/main/QuickSell"))()
+end)
+
+Deepest.Name = "Deepest"
+Deepest.Parent = Main_2
+Deepest.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Deepest.Position = UDim2.new(0.512070298, 0, 0.0319501683, 0)
+Deepest.Size = UDim2.new(0, 185, 0, 36)
+Deepest.Font = Enum.Font.GothamBlack
+Deepest.Text = "Deepest"
+Deepest.TextColor3 = Color3.fromRGB(124, 0, 2)
+Deepest.TextSize = 20.000
+
+ReduceLag.Name = "ReduceLag"
+ReduceLag.Parent = Main_2
+ReduceLag.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+ReduceLag.Position = UDim2.new(0.512070298, 0, 0.113345511, 0)
+ReduceLag.Size = UDim2.new(0, 185, 0, 36)
+ReduceLag.Font = Enum.Font.GothamBlack
+ReduceLag.Text = "ReduceLag"
+ReduceLag.TextColor3 = Color3.fromRGB(124, 0, 2)
+ReduceLag.TextSize = 20.000
+ReduceLag.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/imlukii/AgnarMS2/main/ReduceLag"))()
+end)
+
+UIGridLayout.Parent = Main_2
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellPadding = UDim2.new(0, 9, 0, 9)
+UIGridLayout.CellSize = UDim2.new(0, 200, 0, 50)
+
+QuickBuy.Name = "QuickBuy"
+QuickBuy.Parent = Main_2
+QuickBuy.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+QuickBuy.Position = UDim2.new(0.0317460299, 0, 0.0315614641, 0)
+QuickBuy.Size = UDim2.new(0, 185, 0, 36)
+QuickBuy.Font = Enum.Font.GothamBlack
+QuickBuy.Text = "QuickBuy"
+QuickBuy.TextColor3 = Color3.fromRGB(124, 0, 2)
+QuickBuy.TextSize = 20.000
+QuickBuy.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/imlukii/AgnarMS2/main/QuickBuy"))()
+end)
+
+Player_2.Name = "Player"
+Player_2.Parent = Pages
+Player_2.Active = true
+Player_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Player_2.BackgroundTransparency = 1.000
+Player_2.Position = UDim2.new(0.0204081628, 0, 0.0265780725, 0)
+Player_2.Size = UDim2.new(0, 432, 0, 293)
+Player_2.Visible = false
+
+UIGridLayout_2.Parent = Player_2
+UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout_2.CellPadding = UDim2.new(0, 9, 0, 9)
+UIGridLayout_2.CellSize = UDim2.new(0, 200, 0, 50)
+
+Fly.Name = "Fly"
+Fly.Parent = Player_2
+Fly.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Fly.Position = UDim2.new(0.0317460299, 0, 0.0315614641, 0)
+Fly.Size = UDim2.new(0, 185, 0, 36)
+Fly.Font = Enum.Font.GothamBlack
+Fly.Text = "Fly [X]"
+Fly.TextColor3 = Color3.fromRGB(124, 0, 2)
+Fly.TextSize = 20.000
+Fly.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/imlukii/Agnar/main/Fly"))()
+end)
+
+Noclip.Name = "Noclip"
+Noclip.Parent = Player_2
+Noclip.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Noclip.Position = UDim2.new(0.0317460299, 0, 0.0315614641, 0)
+Noclip.Size = UDim2.new(0, 185, 0, 36)
+Noclip.Font = Enum.Font.GothamBlack
+Noclip.Text = "Noclip [C]"
+Noclip.TextColor3 = Color3.fromRGB(124, 0, 2)
+Noclip.TextSize = 20.000
+Noclip.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/imlukii/Agnar/main/No%20Clip"))()
+end)
+
+SuperHuman.Name = "SuperHuman"
+SuperHuman.Parent = Player_2
+SuperHuman.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+SuperHuman.Position = UDim2.new(0.0317460299, 0, 0.0315614641, 0)
+SuperHuman.Size = UDim2.new(0, 185, 0, 36)
+SuperHuman.Font = Enum.Font.GothamBlack
+SuperHuman.Text = "SuperHuman"
+SuperHuman.TextColor3 = Color3.fromRGB(124, 0, 2)
+SuperHuman.TextSize = 20.000
+
+Reset.Name = "Reset"
+Reset.Parent = Player_2
+Reset.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Reset.Position = UDim2.new(0.0317460299, 0, 0.0315614641, 0)
+Reset.Size = UDim2.new(0, 185, 0, 36)
+Reset.Font = Enum.Font.GothamBlack
+Reset.Text = "Reset WS/JB"
+Reset.TextColor3 = Color3.fromRGB(124, 0, 2)
+Reset.TextSize = 20.000
+
+ForceReset.Name = "ForceReset"
+ForceReset.Parent = Player_2
+ForceReset.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+ForceReset.Position = UDim2.new(0.0317460299, 0, 0.0315614641, 0)
+ForceReset.Size = UDim2.new(0, 185, 0, 36)
+ForceReset.Font = Enum.Font.GothamBlack
+ForceReset.Text = "Force Reset"
+ForceReset.TextColor3 = Color3.fromRGB(124, 0, 2)
+ForceReset.TextSize = 20.000
+ForceReset.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/imlukii/AgnarMS2/main/ForceReset"))()
+end)
+
+Spin.Name = "Spin"
+Spin.Parent = Player_2
+Spin.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Spin.Position = UDim2.new(0.0317460299, 0, 0.0315614641, 0)
+Spin.Size = UDim2.new(0, 185, 0, 36)
+Spin.Font = Enum.Font.GothamBlack
+Spin.Text = "Spin"
+Spin.TextColor3 = Color3.fromRGB(124, 0, 2)
+Spin.TextSize = 20.000
+
+Toggles_2.Name = "Toggles"
+Toggles_2.Parent = Pages
+Toggles_2.Active = true
+Toggles_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggles_2.BackgroundTransparency = 1.000
+Toggles_2.Position = UDim2.new(0.0204081628, 0, 0.0265780725, 0)
+Toggles_2.Size = UDim2.new(0, 432, 0, 293)
+Toggles_2.Visible = false
+
+UIGridLayout_3.Parent = Toggles_2
+UIGridLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout_3.CellPadding = UDim2.new(0, 9, 0, 9)
+UIGridLayout_3.CellSize = UDim2.new(0, 410, 0, 70)
+
+WalkspeedSlider.Name = "WalkspeedSlider"
+WalkspeedSlider.Parent = Toggles_2
+WalkspeedSlider.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+WalkspeedSlider.Size = UDim2.new(0, 100, 0, 100)
+
+TextLabel_2.Parent = WalkspeedSlider
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Size = UDim2.new(0, 412, 0, 31)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "Walkspeed"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 20.000
+
+FOVSlider.Name = "FOVSlider"
+FOVSlider.Parent = WalkspeedSlider
+FOVSlider.AnchorPoint = Vector2.new(0.5, 0.5)
+FOVSlider.BackgroundColor3 = Color3.fromRGB(124, 0, 2)
+FOVSlider.BorderSizePixel = 0
+FOVSlider.Position = UDim2.new(0.5, 0, 0.632142842, 0)
+FOVSlider.Size = UDim2.new(0.970731735, 0, 0.25, 0)
+
+FOVSliderDisplay.Name = "FOVSliderDisplay"
+FOVSliderDisplay.Parent = FOVSlider
+FOVSliderDisplay.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FOVSliderDisplay.BackgroundTransparency = 1.000
+FOVSliderDisplay.BorderSizePixel = 0
+FOVSliderDisplay.LayoutOrder = 1
+FOVSliderDisplay.Position = UDim2.new(1, 5, 0, 0)
+FOVSliderDisplay.Size = UDim2.new(0.100000001, 0, 1, 0)
+FOVSliderDisplay.Font = Enum.Font.GothamMedium
+FOVSliderDisplay.Text = "16"
+FOVSliderDisplay.TextColor3 = Color3.fromRGB(0, 0, 0)
+FOVSliderDisplay.TextScaled = true
+FOVSliderDisplay.TextSize = 14.000
+FOVSliderDisplay.TextWrapped = true
+
+UICorner_9.Parent = FOVSliderDisplay
+
+ResetButton.Name = "ResetButton"
+ResetButton.Parent = FOVSlider
+ResetButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ResetButton.BackgroundTransparency = 1.000
+ResetButton.BorderSizePixel = 0
+ResetButton.LayoutOrder = 2
+ResetButton.Position = UDim2.new(1.10000002, 10, 0, 0)
+ResetButton.Size = UDim2.new(0.100000001, 0, 1, 0)
+ResetButton.Font = Enum.Font.GothamMedium
+ResetButton.Text = "RESET"
+ResetButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ResetButton.TextScaled = true
+ResetButton.TextSize = 14.000
+ResetButton.TextWrapped = true
+
+UICorner_10.Parent = ResetButton
+
+SliderFrame.Name = "SliderFrame"
+SliderFrame.Parent = FOVSlider
+SliderFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SliderFrame.BackgroundTransparency = 1.000
+SliderFrame.BorderSizePixel = 0
+SliderFrame.Size = UDim2.new(0.800000012, 0, 1, 0)
+
+SliderButton.Name = "SliderButton"
+SliderButton.Parent = SliderFrame
+SliderButton.AnchorPoint = Vector2.new(0.5, 0.5)
+SliderButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SliderButton.BorderSizePixel = 0
+SliderButton.Position = UDim2.new(0, 0, 0.5, 0)
+SliderButton.Size = UDim2.new(0.0250000004, 0, 1.25, 0)
+SliderButton.AutoButtonColor = false
+SliderButton.Font = Enum.Font.SourceSans
+SliderButton.Text = ""
+SliderButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+SliderButton.TextSize = 14.000
+
+UICorner_11.Parent = SliderButton
+
+UICorner_12.Parent = SliderFrame
+
+UIListLayout.Parent = FOVSlider
+UIListLayout.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+UICorner_13.Parent = FOVSlider
+
+JumpBoostSlider.Name = "JumpBoostSlider"
+JumpBoostSlider.Parent = Toggles_2
+JumpBoostSlider.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+JumpBoostSlider.Size = UDim2.new(0, 100, 0, 100)
+
+TextLabel_3.Parent = JumpBoostSlider
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Size = UDim2.new(0, 412, 0, 31)
+TextLabel_3.Font = Enum.Font.GothamBold
+TextLabel_3.Text = "JumpBoost"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 20.000
+
+FOVSlider_2.Name = "FOVSlider"
+FOVSlider_2.Parent = JumpBoostSlider
+FOVSlider_2.AnchorPoint = Vector2.new(0.5, 0.5)
+FOVSlider_2.BackgroundColor3 = Color3.fromRGB(124, 0, 2)
+FOVSlider_2.BorderSizePixel = 0
+FOVSlider_2.Position = UDim2.new(0.5, 0, 0.632142842, 0)
+FOVSlider_2.Size = UDim2.new(0.970731735, 0, 0.25, 0)
+
+FOVSliderDisplay_2.Name = "FOVSliderDisplay"
+FOVSliderDisplay_2.Parent = FOVSlider_2
+FOVSliderDisplay_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FOVSliderDisplay_2.BackgroundTransparency = 1.000
+FOVSliderDisplay_2.BorderSizePixel = 0
+FOVSliderDisplay_2.LayoutOrder = 1
+FOVSliderDisplay_2.Position = UDim2.new(1, 5, 0, 0)
+FOVSliderDisplay_2.Size = UDim2.new(0.100000001, 0, 1, 0)
+FOVSliderDisplay_2.Font = Enum.Font.GothamMedium
+FOVSliderDisplay_2.Text = "50"
+FOVSliderDisplay_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+FOVSliderDisplay_2.TextScaled = true
+FOVSliderDisplay_2.TextSize = 14.000
+FOVSliderDisplay_2.TextWrapped = true
+
+UICorner_14.Parent = FOVSliderDisplay_2
+
+ResetButton_2.Name = "ResetButton"
+ResetButton_2.Parent = FOVSlider_2
+ResetButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ResetButton_2.BackgroundTransparency = 1.000
+ResetButton_2.BorderSizePixel = 0
+ResetButton_2.LayoutOrder = 2
+ResetButton_2.Position = UDim2.new(1.10000002, 10, 0, 0)
+ResetButton_2.Size = UDim2.new(0.100000001, 0, 1, 0)
+ResetButton_2.Font = Enum.Font.GothamMedium
+ResetButton_2.Text = "RESET"
+ResetButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ResetButton_2.TextScaled = true
+ResetButton_2.TextSize = 14.000
+ResetButton_2.TextWrapped = true
+
+UICorner_15.Parent = ResetButton_2
+
+SliderFrame_2.Name = "SliderFrame"
+SliderFrame_2.Parent = FOVSlider_2
+SliderFrame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SliderFrame_2.BackgroundTransparency = 1.000
+SliderFrame_2.BorderSizePixel = 0
+SliderFrame_2.Size = UDim2.new(0.800000012, 0, 1, 0)
+
+SliderButton_2.Name = "SliderButton"
+SliderButton_2.Parent = SliderFrame_2
+SliderButton_2.AnchorPoint = Vector2.new(0.5, 0.5)
+SliderButton_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SliderButton_2.BorderSizePixel = 0
+SliderButton_2.Position = UDim2.new(0, 0, 0.5, 0)
+SliderButton_2.Size = UDim2.new(0.0250000004, 0, 1.25, 0)
+SliderButton_2.AutoButtonColor = false
+SliderButton_2.Font = Enum.Font.SourceSans
+SliderButton_2.Text = ""
+SliderButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+SliderButton_2.TextSize = 14.000
+
+UICorner_16.Parent = SliderButton_2
+
+UICorner_17.Parent = SliderFrame_2
+
+UIListLayout_2.Parent = FOVSlider_2
+UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+UICorner_18.Parent = FOVSlider_2
+
+SettingsFrame.Name = "SettingsFrame"
+SettingsFrame.Parent = Toggles_2
+SettingsFrame.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+SettingsFrame.Size = UDim2.new(0, 100, 0, 100)
+
+TextLabel_4.Parent = SettingsFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Size = UDim2.new(0, 412, 0, 31)
+TextLabel_4.Font = Enum.Font.GothamBold
+TextLabel_4.Text = "FOV (Field of View)"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 20.000
+
+FOVSlider_3.Name = "FOVSlider"
+FOVSlider_3.Parent = SettingsFrame
+FOVSlider_3.AnchorPoint = Vector2.new(0.5, 0.5)
+FOVSlider_3.BackgroundColor3 = Color3.fromRGB(124, 0, 2)
+FOVSlider_3.BorderSizePixel = 0
+FOVSlider_3.Position = UDim2.new(0.5, 0, 0.632142842, 0)
+FOVSlider_3.Size = UDim2.new(0.970731735, 0, 0.25, 0)
+
+FOVSliderDisplay_3.Name = "FOVSliderDisplay"
+FOVSliderDisplay_3.Parent = FOVSlider_3
+FOVSliderDisplay_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FOVSliderDisplay_3.BackgroundTransparency = 1.000
+FOVSliderDisplay_3.BorderSizePixel = 0
+FOVSliderDisplay_3.LayoutOrder = 1
+FOVSliderDisplay_3.Position = UDim2.new(1, 5, 0, 0)
+FOVSliderDisplay_3.Size = UDim2.new(0.100000001, 0, 1, 0)
+FOVSliderDisplay_3.Font = Enum.Font.GothamMedium
+FOVSliderDisplay_3.Text = "70"
+FOVSliderDisplay_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+FOVSliderDisplay_3.TextScaled = true
+FOVSliderDisplay_3.TextSize = 14.000
+FOVSliderDisplay_3.TextWrapped = true
+
+UICorner_19.Parent = FOVSliderDisplay_3
+
+SliderFrame_3.Name = "SliderFrame"
+SliderFrame_3.Parent = FOVSlider_3
+SliderFrame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SliderFrame_3.BackgroundTransparency = 1.000
+SliderFrame_3.BorderSizePixel = 0
+SliderFrame_3.Size = UDim2.new(0.800000012, 0, 1, 0)
+
+SliderButton_3.Name = "SliderButton"
+SliderButton_3.Parent = SliderFrame_3
+SliderButton_3.AnchorPoint = Vector2.new(0.5, 0.5)
+SliderButton_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SliderButton_3.BorderSizePixel = 0
+SliderButton_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+SliderButton_3.Size = UDim2.new(0.0250000004, 0, 1.25, 0)
+SliderButton_3.AutoButtonColor = false
+SliderButton_3.Font = Enum.Font.SourceSans
+SliderButton_3.Text = ""
+SliderButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+SliderButton_3.TextSize = 14.000
+
+UICorner_20.Parent = SliderButton_3
+
+UICorner_21.Parent = SliderFrame_3
+
+UIListLayout_3.Parent = FOVSlider_3
+UIListLayout_3.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+
+UICorner_22.Parent = FOVSlider_3
+
+ResetButton_3.Name = "ResetButton"
+ResetButton_3.Parent = FOVSlider_3
+ResetButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ResetButton_3.BackgroundTransparency = 1.000
+ResetButton_3.BorderSizePixel = 0
+ResetButton_3.LayoutOrder = 2
+ResetButton_3.Position = UDim2.new(1.10000002, 10, 0, 0)
+ResetButton_3.Size = UDim2.new(0.100000001, 0, 1, 0)
+ResetButton_3.Font = Enum.Font.GothamMedium
+ResetButton_3.Text = "RESET"
+ResetButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+ResetButton_3.TextScaled = true
+ResetButton_3.TextSize = 14.000
+ResetButton_3.TextWrapped = true
+
+UICorner_23.Parent = ResetButton_3
+
+AutoFarm_2.Name = "AutoFarm"
+AutoFarm_2.Parent = Pages
+AutoFarm_2.Active = true
+AutoFarm_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarm_2.BackgroundTransparency = 1.000
+AutoFarm_2.Position = UDim2.new(0.0204081628, 0, 0.0265780725, 0)
+AutoFarm_2.Size = UDim2.new(0, 432, 0, 293)
+AutoFarm_2.Visible = false
+
+UIGridLayout_4.Parent = AutoFarm_2
+UIGridLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout_4.CellPadding = UDim2.new(0, 9, 0, 9)
+UIGridLayout_4.CellSize = UDim2.new(0, 200, 0, 50)
+
+UnlockIsland.Name = "Unlock Island"
+UnlockIsland.Parent = AutoFarm_2
+UnlockIsland.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+UnlockIsland.Position = UDim2.new(0.0317460299, 0, 0.0315614641, 0)
+UnlockIsland.Size = UDim2.new(0, 185, 0, 36)
+UnlockIsland.Font = Enum.Font.GothamBlack
+UnlockIsland.Text = "Unlock Island"
+UnlockIsland.TextColor3 = Color3.fromRGB(124, 0, 2)
+UnlockIsland.TextSize = 20.000
+UnlockIsland.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/imlukii/AgnarMS2/main/UnlockIslands"))()
+end)
+
+HiddenTreasure.Name = "Hidden Treasure"
+HiddenTreasure.Parent = AutoFarm_2
+HiddenTreasure.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+HiddenTreasure.Position = UDim2.new(0.512070298, 0, 0.0319501683, 0)
+HiddenTreasure.Size = UDim2.new(0, 185, 0, 36)
+HiddenTreasure.Font = Enum.Font.GothamBlack
+HiddenTreasure.Text = "Hidden Treasure"
+HiddenTreasure.TextColor3 = Color3.fromRGB(124, 0, 2)
+HiddenTreasure.TextSize = 20.000
+HiddenTreasure.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/imlukii/AgnarMS2/main/HiddenTreasure"))()
+end)
+
+FrozenDepths.Name = "Frozen Depths"
+FrozenDepths.Parent = AutoFarm_2
+FrozenDepths.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+FrozenDepths.Position = UDim2.new(0.512070298, 0, 0.113345511, 0)
+FrozenDepths.Size = UDim2.new(0, 185, 0, 36)
+FrozenDepths.Font = Enum.Font.GothamBlack
+FrozenDepths.Text = "Frozen Depths"
+FrozenDepths.TextColor3 = Color3.fromRGB(124, 0, 2)
+FrozenDepths.TextSize = 20.000
+FrozenDepths.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/imlukii/AgnarMS2/main/FrozenDephs"))()
+end)
+
+GloomyBasin.Name = "Gloomy Basin"
+GloomyBasin.Parent = AutoFarm_2
+GloomyBasin.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+GloomyBasin.Position = UDim2.new(0.0317460299, 0, 0.0315614641, 0)
+GloomyBasin.Size = UDim2.new(0, 185, 0, 36)
+GloomyBasin.Font = Enum.Font.GothamBlack
+GloomyBasin.Text = "Gloomy Basin"
+GloomyBasin.TextColor3 = Color3.fromRGB(124, 0, 2)
+GloomyBasin.TextSize = 20.000
+GloomyBasin.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/imlukii/AgnarMS2/main/GloomyBasin"))()
+end)
+
+MoltenCore.Name = "Molten Core"
+MoltenCore.Parent = AutoFarm_2
+MoltenCore.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+MoltenCore.Position = UDim2.new(0.0317460299, 0, 0.0315614641, 0)
+MoltenCore.Size = UDim2.new(0, 185, 0, 36)
+MoltenCore.Font = Enum.Font.GothamBlack
+MoltenCore.Text = "Molten Core"
+MoltenCore.TextColor3 = Color3.fromRGB(124, 0, 2)
+MoltenCore.TextSize = 20.000
+MoltenCore.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/imlukii/AgnarMS2/main/MoltenCore"))()
+end)
+
+TheUnderworld.Name = "The Underworld"
+TheUnderworld.Parent = AutoFarm_2
+TheUnderworld.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+TheUnderworld.Position = UDim2.new(0.512070298, 0, 0.113345511, 0)
+TheUnderworld.Size = UDim2.new(0, 185, 0, 36)
+TheUnderworld.Font = Enum.Font.GothamBlack
+TheUnderworld.Text = "The Underworld"
+TheUnderworld.TextColor3 = Color3.fromRGB(124, 0, 2)
+TheUnderworld.TextSize = 20.000
+TheUnderworld.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/imlukii/AgnarMS2/main/TheUnderworld"))()
+end)
+
+CrystalCavern.Name = "Crystal Cavern"
+CrystalCavern.Parent = AutoFarm_2
+CrystalCavern.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+CrystalCavern.Position = UDim2.new(0.512070298, 0, 0.113345511, 0)
+CrystalCavern.Size = UDim2.new(0, 185, 0, 36)
+CrystalCavern.Font = Enum.Font.GothamBlack
+CrystalCavern.Text = "Crystal Cavern"
+CrystalCavern.TextColor3 = Color3.fromRGB(124, 0, 2)
+CrystalCavern.TextSize = 20.000
+CrystalCavern.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/imlukii/AgnarMS2/main/CrystalCavern"))()
+end)
+
+ChestESP.Name = "Chest ESP"
+ChestESP.Parent = AutoFarm_2
+ChestESP.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+ChestESP.Position = UDim2.new(0.512070298, 0, 0.113345511, 0)
+ChestESP.Size = UDim2.new(0, 185, 0, 36)
+ChestESP.Font = Enum.Font.GothamBlack
+ChestESP.Text = "Chest ESP"
+ChestESP.TextColor3 = Color3.fromRGB(124, 0, 2)
+ChestESP.TextSize = 20.000
+ChestESP.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/imlukii/ChestESP/main/shit"))()
+end)
+
+Settings_2.Name = "Settings"
+Settings_2.Parent = Pages
+Settings_2.Active = true
+Settings_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings_2.BackgroundTransparency = 1.000
+Settings_2.Position = UDim2.new(0.0204081628, 0, 0.0265780725, 0)
+Settings_2.Size = UDim2.new(0, 432, 0, 293)
+Settings_2.Visible = false
+
+UIGridLayout_5.Parent = Settings_2
+UIGridLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout_5.CellPadding = UDim2.new(0, 9, 0, 9)
+UIGridLayout_5.CellSize = UDim2.new(0, 200, 0, 50)
+
+User.Name = "User"
+User.Parent = Pages
+User.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+User.BackgroundTransparency = 1.000
+User.Size = UDim2.new(0, 441, 0, 301)
+
+PlayerImage.Name = "PlayerImage"
+PlayerImage.Parent = User
+PlayerImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerImage.Position = UDim2.new(0.0272108912, 0, 0.0398671106, 0)
+PlayerImage.Size = UDim2.new(0, 117, 0, 117)
+PlayerImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_24.CornerRadius = UDim.new(0, 90)
+UICorner_24.Parent = PlayerImage
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = User
+PlayerName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.BackgroundTransparency = 1.000
+PlayerName.Position = UDim2.new(0.324263036, 0, 0.0797342211, 0)
+PlayerName.Size = UDim2.new(0, 290, 0, 121)
+PlayerName.Font = Enum.Font.GothamBold
+PlayerName.Text = "Welcome, User"
+PlayerName.TextColor3 = Color3.fromRGB(124, 0, 2)
+PlayerName.TextScaled = true
+PlayerName.TextSize = 40.000
+PlayerName.TextWrapped = true
+
+Title.Name = "Title"
+Title.Parent = User
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.0272108838, 0, 0.48172757, 0)
+Title.Size = UDim2.new(0, 212, 0, 34)
+Title.Font = Enum.Font.GothamBlack
+Title.Text = "v0.0.1 Release Notes:"
+Title.TextColor3 = Color3.fromRGB(124, 0, 2)
+Title.TextSize = 20.000
+
+NotesFrame.Name = "NotesFrame"
+NotesFrame.Parent = User
+NotesFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NotesFrame.BackgroundTransparency = 1.000
+NotesFrame.Position = UDim2.new(0.0272108838, 0, 0.594684362, 0)
+NotesFrame.Size = UDim2.new(0, 418, 0, 107)
+
+First.Name = "First"
+First.Parent = NotesFrame
+First.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+First.BackgroundTransparency = 1.000
+First.Size = UDim2.new(0, 87, 0, 27)
+First.Font = Enum.Font.GothamBlack
+First.Text = "- Release"
+First.TextColor3 = Color3.fromRGB(124, 0, 2)
+First.TextScaled = true
+First.TextSize = 20.000
+First.TextWrapped = true
+
+Second.Name = "Second"
+Second.Parent = NotesFrame
+Second.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Second.BackgroundTransparency = 1.000
+Second.Position = UDim2.new(0, 0, 0.233644858, 0)
+Second.Size = UDim2.new(0, 117, 0, 27)
+Second.Font = Enum.Font.GothamBlack
+Second.Text = "- GUI ReMake"
+Second.TextColor3 = Color3.fromRGB(124, 0, 2)
+Second.TextScaled = true
+Second.TextSize = 20.000
+Second.TextWrapped = true
+
+-- Scripts:
+
+local function HHOLYEG_fake_script() -- Profile.LocalScript 
+	local script = Instance.new('LocalScript', Profile)
+
+	local player = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		player.PlayerGui.Agnar.Frame.Pages.AutoFarm.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.Main.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.Player.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.Settings.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.Toggles.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.User.Visible = true
+	end)
+end
+coroutine.wrap(HHOLYEG_fake_script)()
+local function WBRLCY_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	local player = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		player.PlayerGui.Agnar.Frame.Pages.AutoFarm.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.Main.Visible = true
+		player.PlayerGui.Agnar.Frame.Pages.Player.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.Settings.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.Toggles.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.User.Visible = false
+	end)
+end
+coroutine.wrap(WBRLCY_fake_script)()
+local function DVDW_fake_script() -- Player.LocalScript 
+	local script = Instance.new('LocalScript', Player)
+
+	local player = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		player.PlayerGui.Agnar.Frame.Pages.AutoFarm.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.Main.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.Player.Visible = true
+		player.PlayerGui.Agnar.Frame.Pages.Settings.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.Toggles.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.User.Visible = false
+	end)
+end
+coroutine.wrap(DVDW_fake_script)()
+local function NUVO_fake_script() -- Toggles.LocalScript 
+	local script = Instance.new('LocalScript', Toggles)
+
+	local player = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		player.PlayerGui.Agnar.Frame.Pages.AutoFarm.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.Main.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.Player.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.Settings.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.Toggles.Visible = true
+		player.PlayerGui.Agnar.Frame.Pages.User.Visible = false
+	end)
+end
+coroutine.wrap(NUVO_fake_script)()
+local function QSBD_fake_script() -- AutoFarm.LocalScript 
+	local script = Instance.new('LocalScript', AutoFarm)
+
+	local player = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		player.PlayerGui.Agnar.Frame.Pages.AutoFarm.Visible = true
+		player.PlayerGui.Agnar.Frame.Pages.Main.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.Player.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.Settings.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.Toggles.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.User.Visible = false
+	end)
+end
+coroutine.wrap(QSBD_fake_script)()
+local function AHCZAT_fake_script() -- Settings.LocalScript 
+	local script = Instance.new('LocalScript', Settings)
+
+	local player = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		player.PlayerGui.Agnar.Frame.Pages.AutoFarm.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.Main.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.Player.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.Settings.Visible = true
+		player.PlayerGui.Agnar.Frame.Pages.Toggles.Visible = false
+		player.PlayerGui.Agnar.Frame.Pages.User.Visible = false
+	end)
+end
+coroutine.wrap(AHCZAT_fake_script)()
+local function NBGVMSX_fake_script() -- User.LocalScript 
+	local script = Instance.new('LocalScript', User)
+
+	local frame = script.Parent
+	
+	
+	
+	local player = game.Players.LocalPlayer
+	
+	
+	
+	local userId = player.UserId
+	
+	local thumbType = Enum.ThumbnailType.AvatarBust
+	
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	
+	local content, isReady = game.Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	
+	
+	
+	
+	frame.PlayerImage.Image = content
+	
+	frame.PlayerName.Text = "Welcome , "..player.Name
+end
+coroutine.wrap(NBGVMSX_fake_script)()
+local function CTZJZ_fake_script() -- Agnar.Keybind 
+	local script = Instance.new('LocalScript', Agnar)
+
+	local player = game.Players.LocalPlayer
+	
+	player:GetMouse().KeyDown:Connect(function(K)
+		if K == "v" then
+			if player.PlayerGui.Agnar.Frame.Visible == true then
+				player.PlayerGui.Agnar.Frame.Visible = false
+				print("Gui Closed")
+			else
+				player.PlayerGui.Agnar.Frame.Visible = true
+				print("Gui Showed")
+			end
+		end
+	end)
+end
+coroutine.wrap(CTZJZ_fake_script)()
+local function NPUSRZ_fake_script() -- Agnar.FovSlider 
+	local script = Instance.new('LocalScript', Agnar)
+
+	local UIS = game:GetService("UserInputService")
+	local settingsFrame = script.Parent.Frame.Pages.Toggles.SettingsFrame
+	
+	local FOVSlider = settingsFrame.FOVSlider
+	local sliderFrame = FOVSlider.SliderFrame
+	local sliderButton = sliderFrame.SliderButton
+	local FOVDisplay = FOVSlider.FOVSliderDisplay
+	local FOVResetButton = FOVSlider.ResetButton
+	local FOVDragging = false
+	
+	sliderButton.MouseButton1Down:Connect(function()
+		FOVDragging = true
+	end)
+	
+	UIS.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			FOVDragging = false
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement then
+			if FOVDragging == true then
+				local mouseloc = UIS:GetMouseLocation()
+				local relativePos = mouseloc-FOVSlider.AbsolutePosition
+				local per = math.clamp(relativePos.X/sliderFrame.AbsoluteSize.X,0,1)
+				sliderButton.Position = UDim2.new(per,0,.5,0)
+				game.Workspace.CurrentCamera.FieldOfView = math.round(per*120)
+				FOVDisplay.Text = math.round(game.Workspace.CurrentCamera.FieldOfView)
+			end
+		end
+	end)
+	
+	FOVResetButton.MouseButton1Click:Connect(function()
+		FOVDisplay.Text = "70"
+		sliderButton.Position = UDim2.new(.5,0,.5,0)
+		game.Workspace.CurrentCamera.FieldOfView = 70
+	end)
+end
+coroutine.wrap(NPUSRZ_fake_script)()
+local function PONBPEJ_fake_script() -- Agnar.Jump 
+	local script = Instance.new('LocalScript', Agnar)
+
+	local UIS = game:GetService("UserInputService")
+	local settingsFrame = script.Parent.Frame.Pages.Toggles.JumpBoostSlider
+	
+	local FOVSlider = settingsFrame.FOVSlider
+	local sliderFrame = FOVSlider.SliderFrame
+	local sliderButton = sliderFrame.SliderButton
+	local FOVDisplay = FOVSlider.FOVSliderDisplay
+	local FOVResetButton = FOVSlider.ResetButton
+	local FOVDragging = false
+	
+	sliderButton.MouseButton1Down:Connect(function()
+		FOVDragging = true
+	end)
+	
+	UIS.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			FOVDragging = false
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement then
+			if FOVDragging == true then
+				local mouseloc = UIS:GetMouseLocation()
+				local relativePos = mouseloc-FOVSlider.AbsolutePosition
+				local per = math.clamp(relativePos.X/sliderFrame.AbsoluteSize.X,0,1)
+				sliderButton.Position = UDim2.new(per,0,.5,0)
+				game.Players.LocalPlayer.Character.Humanoid.JumpPower = math.round(per*200)
+				FOVDisplay.Text = math.round(game.Players.LocalPlayer.Character.Humanoid.JumpPower)
+			end
+		end
+	end)
+	
+	FOVResetButton.MouseButton1Click:Connect(function()
+		FOVDisplay.Text = "50"
+		sliderButton.Position = UDim2.new(.5,0,.5,0)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+	end)
+end
+coroutine.wrap(PONBPEJ_fake_script)()
+local function RWQY_fake_script() -- Agnar.WalkSpeed 
+	local script = Instance.new('LocalScript', Agnar)
+
+	local UIS = game:GetService("UserInputService")
+	local settingsFrame = script.Parent.Frame.Pages.Toggles.WalkspeedSlider
+	
+	local FOVSlider = settingsFrame.FOVSlider
+	local sliderFrame = FOVSlider.SliderFrame
+	local sliderButton = sliderFrame.SliderButton
+	local FOVDisplay = FOVSlider.FOVSliderDisplay
+	local FOVResetButton = FOVSlider.ResetButton
+	local FOVDragging = false
+	
+	sliderButton.MouseButton1Down:Connect(function()
+		FOVDragging = true
+	end)
+	
+	UIS.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			FOVDragging = false
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement then
+			if FOVDragging == true then
+				local mouseloc = UIS:GetMouseLocation()
+				local relativePos = mouseloc-FOVSlider.AbsolutePosition
+				local per = math.clamp(relativePos.X/sliderFrame.AbsoluteSize.X,0,1)
+				sliderButton.Position = UDim2.new(per,0,.5,0)
+				game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = math.round(per*200)
+				FOVDisplay.Text = math.round(game.Players.LocalPlayer.Character.Humanoid.WalkSpeed)
+			end
+		end
+	end)
+	
+	FOVResetButton.MouseButton1Click:Connect(function()
+		FOVDisplay.Text = "16"
+		sliderButton.Position = UDim2.new(.5,0,.5,0)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	end)
+end
+coroutine.wrap(RWQY_fake_script)()
